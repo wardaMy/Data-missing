@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Data Missing - My Docs</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="./">Data Missing</a>
+                            </li>
+                            <li >
+                                <a href="../statistika Deskriptif/">statistika Deskriptif</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../statistika Deskriptif/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#pengertian">Pengertian</a></li>
+            <li><a href="#ainterviewer-recording-error">a.Interviewer recording error</a></li>
+            <li><a href="#brespondent-inability-error">b.Respondent inability error</a></li>
+            <li><a href="#c-unwillingness-respondent-error">c. Unwillingness respondent error</a></li>
+            <li><a href="#tipe-missing-data">Tipe Missing Data</a></li>
+            <li><a href="#metode-penanganan-missing-data">Metode Penanganan Missing Data</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="pengertian">Pengertian</h2>
+<p><strong>Data hilang</strong> atau <em>Missing Data</em> atau <em>Missing value</em> dapat diartikan sebagai data atau informasi yang “hilang” atau tidak tersedia mengenai subjek penelitian pada variabel tertentu akibat faktor non sampling error. Faktor non sampling error yang dimaksud adalah interviewer recording error, respondent inability error, dan respondent unwillingness error.</p>
+<h6 id="ainterviewer-recording-error">a.<strong>Interviewer recording error</strong></h6>
+<p>terjadi akibat kealpaan petugas pengumpul data (pewawancara), misalnya ada sejumlah pertanyaan yang terlewatkan.</p>
+<h6 id="brespondent-inability-error">b.<strong>Respondent inability error</strong></h6>
+<p>terjadi akibat ketidakmampuan responden dalam memberikan jawaban akurat, misalnya karena tidak memahami pertanyaan, bosan atau kelelahan (respondent fatigue) akhirnya responden mengosongkan sejumlah pertanyaan atau berhenti mengisi kuesioner di tengah jalan.</p>
+<h6 id="c-unwillingness-respondent-error">c. <strong>Unwillingness respondent error</strong></h6>
+<p>tejadi karena responden tidak berkenan memberikan jawaban yang akurat, misalnya pertanyaan soal penghasilan, usia, berat badan, pengalaman melakukan pelanggaran hukum, dll. Seperti halnya pada <em>respondent inability error</em>, responden bisa mengosongkan jawaban atau menghentikan proses pengisian kuesioner.</p>
+<h3 id="tipe-missing-data">Tipe Missing Data</h3>
+<hr />
+<p>Dalam prosedur statistika modern, untuk data hilang, ketidaklengkapan suatu data di asumsikan mengikuti suatu mekanisme tertentu, Menurut Rubin(1976) tipe data hilang terbagi kedalam tiga tipe, yaitu :</p>
+<h6 id="amissing-at-random-mar">a.<strong>Missing at Random (MAR)</strong></h6>
+<p>jika mekanisme data hilang terdistribusi secara acak untuk sebagian unit observasi. Dengan kata lain, <em>Missing at Random (MAR)</em>, berarti terjadinya missing data hanya berkaitan dengan variabel respon/pengamatan. Contohnya seseorang yang memiliki rasa waswas yang tinggi cenderung tidak akan melaporkan pendapatan mereka, rasa waswas akan berhubungan pada pelaporan pendapatan. Namun, peluang penderita rasa waswas sendiri untuk melaporkan pendapatan tidak berhubungan dengan tingkat pendapatan, maka data dapat digolongkan dengan MAR. Jika data adalah MCAR atau MAR, dapat dikatakan missingness diabaikan.</p>
+<h6 id="b-missing-completely-at-random-mcar">b. <strong>Missing completely at random (MCAR)</strong></h6>
+<p>jika mekanisme data hilang yang terdistribusi secara acak untuk seluruh unit observasi. Dengak kata lain, <em>Missing Completely at Random</em> (MCAR) yang berarti bahwa terjadinya missing data tidak berkaitan dengan nilai semua variabel, apakah itu variabel dengan <em>missing values</em> atau dengan variabel pengamatan. Hal ini berarti missing data terjadi secara acak.</p>
+<h6 id="c-missing-not-at-random-mnar">c. <strong>Missing Not at Random (MNAR)</strong></h6>
+<p>mekanisme data hilang yang tidak terdistribusi secara random. Dengan kata lain, <em>Missingness Is Non-Ignorable</em> bahwa terjadinya missing data pada suatu variabel berkaitan dengan variabel itu sendiri, sehingga ini tidak bisa diprediksi dari variabel lain pada suatu dataset.</p>
+<p>Sebagai catatan, <em>Missing data</em> pada dasarnya tidak bermasalah bagi keseluruhan data, apalagi jika jumlahnya hanya sedikit, misalnya <strong>hanya 1 % dari seluruh data</strong>. Namun jika persentase data yang hilang tersebut cukup besar, maka perlu dilakukan pengujian apakah data yang mengandung banyak missing tersebut masih layak diproses lebih lanjut ataukah tidak.</p>
+<h3 id="metode-penanganan-missing-data">Metode Penanganan Missing Data</h3>
+<hr />
+<p>Metode dalam menangani misssing data secara umum dapat dilakukan dengan cara berikut ini,</p>
+<h6 id="a-mengabaikan-dan-membuang-missing-data">a. <strong>Mengabaikan dan membuang missing data</strong></h6>
+<p>Contoh metode yang sering digunakan pada kategori ini adalah metode <em>Listwise deletion 16</em> dan <em>Pairwaise deletion 11</em> (Gary dkk, 2000);</p>
+<h6 id="b-estimasi-parameter">b. <strong>Estimasi parameter</strong></h6>
+<p>Contohnya <a href="https://www.dictio.id/t/apa-yangd-imaksud-dengan-algoritma-em-atau-expectation-maximization-em-algorithm/116506">algoritma Expectation-Maximization ( EM Algorithm)</a> yang digunakan untuk mengestimasi parameter dari <em>missing data</em> (Dempster dkk, 1976);</p>
+<h6 id="c-imputasi">c. Imputasi</h6>
+<p>Proses pengisian atau penggantian nilai-nilai yang hilang (missing values) pada sekumpulan data (dataset ) dengan nilai-nilai yang mungkin (plausible values) berdasarkan informasi yang didapatkan pada dataset tersebut (Myrtveit, Stensrud dan Olsson, 2001).</p>
+<p>Terdapat berbagai teknik dan cara untuk menduga data tidak lengkap, seperti yang dinyatakan oleh Little &amp; Rubin (1987), penanganan data hilang dapat dilakukan berdasarkan prosedur : amatan lengkap, imputasi, pembobotan dan model.</p>
+<ol>
+<li><strong>Prosedur berbasis unit yang lengkap</strong> (<em>Case Completely Analysis</em>)</li>
+</ol>
+<p>Pada prosedur ini analisis hanya dilakukan terhadap unit/kasus dimana untuk seluruh variabel nilainya tercatat atau memiliki data yang lengkap. Sedangkan sebanyak n2 cases yang terdapat missing data pada variabel-variabelnya diabaikan, atau dikeluarkan dari analisis. Metode ini cukup memuaskan jika jumlah missing data tidak terlalu besar, tapi prosedur ini menjadi tidak efisien jika persentase <em>missing data</em> (n2/n).100 meningkat atau jika missing data tersebut mengelompok . Hal tersebut akan menyebabkan hasil yang sangat bias. (Ketika pengamatan yang hilang bukan pilihan sepenuhnya acak data (MRAC), analisis CC dapat memberikan estimasi bias dan kesimpulan tidak valid)</p>
+<ol>
+<li><strong>Prosedur berbasis Imputasi 4.</strong></li>
+</ol>
+<p>Imputasi merupakan suatu alternatif yang umum dan fleksibel. Dalam prosedur ini, missing value diisi baik dengan menduga langsung atau menggunakan penduga berbasis korelasi. Namun bagaimanapun metode ini tetap menghasilkan bias, dimana nilai yang diimput berbeda dengan nilai sebenarnya dari missing data. Terdapat beberapa macam pendekatan untuk imputasi ini, antara lain:</p>
+<ul>
+<li><strong>Hot deck imputation</strong>, dimana dari unit-unit yang tercatat disubstitusikan terhadap missing data.</li>
+<li><strong>Cold deck imputation</strong>, dimana missing value diganti oleh suatu nilai yang konstan.</li>
+<li><strong>Mean imputation</strong>, yaitu dimana nilai yang hilang diganti oleh rata-rata (mean) dari kelompok sampel unit terkait.</li>
+<li>
+<p><strong>Regression (correlation) imputation</strong>, yaitu dimana missing value dari suatu variabel diestimasi menggunakan nilai penduga dari regresi atau korelasi variabel tersebut pada variabel lainnya yang diketahui.</p>
+</li>
+<li>
+<p><strong>Prosedur Weighting (Pembobotan)</strong></p>
+</li>
+</ul>
+<p>Pada prosedur ini estimasi biasanya didasarkan pada <em>design weight</em>, yaitu proporsional secara terbalik terhadap peluang pemilihan sampelnya.</p>
+<ol>
+<li><strong>Prosedur berbasis Model 2</strong></li>
+</ol>
+<p>Suatu prosedur yang dibentuk dengan menentukan suatu model sebagian data yang hilang (<em>missing data</em>) tersebut dan selanjutnya melakukan inferensi berbasis pada <em>likelihood</em> dibawah model tersebut. Parameter diestimasi dengan suatu prosedur iteratif maximum likelihood dimulai dengan unit atau cases yang lengkap.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
